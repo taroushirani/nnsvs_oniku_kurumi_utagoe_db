@@ -22,7 +22,7 @@ Due to the licensing issue, this recipe does not include data nor helper scripts
 The directory structure made by this recipe is the same as kiritan_singing does.
 
 ## Sample code
-- [Jupyter Notebook](https://gist.github.com/taroushirani/987211cc4023eab174b71bfe7041fd95) (Google Colaboratory, comments are written in Japanese)
+- Jupyter Notebook coming soon (Google Colaboratory, comments are written in Japanese)
 
 ## Resources
 
