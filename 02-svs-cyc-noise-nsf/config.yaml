@@ -17,7 +17,8 @@ out_dir: "./data"
 ## Sampling Rate
 # Sampling rate with which acoustic features are extracted.
 # If you change this value, you have to change both acoustic_model_stream_sizes
-# and acoustic_model_out_dim because the dimension of bap(band aperiodicity).
+# and acoustic_model_out_dim because the dimension of bap(band aperiodicity)
+# is also changed.
 # The relationships between typical sampling rate and dimension of bap
 # are as follows:
 #
