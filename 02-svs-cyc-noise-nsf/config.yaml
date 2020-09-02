@@ -15,11 +15,10 @@ db_root: "~/data/ONIKU_KURUMI_UTAGOE_DB"
 out_dir: "./data"
 
 ## Sampling Rate
-# Sampling rate with which acoustic features are extracted
-# If you change this value, you have to change acoustic_model_stream_sizes and
-# acoustic_model_out_dim because the dimension of bap(band aperiodicity)
-# is also changed.
-# The relationships between a typical sampling rate and dimension of bap
+# Sampling rate with which acoustic features are extracted.
+# If you change this value, you have to change both acoustic_model_stream_sizes
+# and acoustic_model_out_dim because the dimension of bap(band aperiodicity).
+# The relationships between typical sampling rate and dimension of bap
 # are as follows:
 #
 # Sampling rate | Dimension of bap
@@ -33,7 +32,7 @@ out_dir: "./data"
 #
 # The stream of acoustic features are arranged as mgc, f0, vuv, bap.
 # Mgc, f0, bap have their dynamic features so the dimensions of them are
-# multiplied by 3. For detail, please inspect the source of NNSVS.
+# multiplied by 3. For detail, please see the source of NNSVS.
 sample_rate: 16000
 # mgc((1+59 order) x 3), f0(1x3), vuv(1 (no dynamic feature), bap(1 x 3)
 acoustic_model_stream_sizes: [180,3,1,3]
