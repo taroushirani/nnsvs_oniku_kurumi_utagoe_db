@@ -74,7 +74,7 @@ if [ ${stage} -le 1 ] && [ ${stop_stage} -ge 1 ]; then
     for s in ${datasets[@]};
     do
       nnsvs-prepare-features utt_list=data/list/$s.list out_dir=$dump_org_dir/$s/  \
-        question_path=$config_question_path acoustic.f0_floor=70 acoustic.f0_ceil=390
+        question_path=$config_question_path 
     done
 
     # Compute normalization stats for each input/output
