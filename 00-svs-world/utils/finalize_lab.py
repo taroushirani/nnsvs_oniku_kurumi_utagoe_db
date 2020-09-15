@@ -2,7 +2,7 @@ import pysinsy
 import os
 
 from glob import glob
-from os.path import join, basename, expanduser, splitext, exists
+from os.path import join, basename, exists, expanduser, splitext
 from nnmnkwii.io import hts
 from scipy.io import wavfile
 import librosa
@@ -197,6 +197,9 @@ for base in tqdm(base_files):
     assert exists(wav_path)
     # sr, wave = wavfile.read(wav_path)
     wav, sr = librosa.load(wav_path, sr=48000)
+
+    # gain normalize
+    wav = wav / wav.max() * 0.99
 
     seg_idx = 0
     while True:

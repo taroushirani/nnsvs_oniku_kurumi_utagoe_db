@@ -4,7 +4,7 @@ import os
 from glob import glob
 from os.path import join, basename, expanduser, splitext
 from nnmnkwii.io import hts
-from util import merge_sil
+from util import merge_sil, fix_mono_lab_before_align
 from tqdm import tqdm
 
 import yaml
