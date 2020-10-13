@@ -196,7 +196,8 @@ for base in tqdm(base_files):
     wav_path = join(expanduser(config["db_root"]), f"{utt_id}/{utt_id}.wav")
     assert exists(wav_path)
     # sr, wave = wavfile.read(wav_path)
-    wav, sr = librosa.load(wav_path, sr=48000)
+    wav, sr = librosa.load(wav_path, config["sample_rate"])
+    assert sr == config["sample_rate"]
 
     # gain normalize
     wav = wav / wav.max() * 0.99
