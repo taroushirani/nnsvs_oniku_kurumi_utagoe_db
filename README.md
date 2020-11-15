@@ -1,7 +1,12 @@
 # nnsvs_oniku_kurumi_utagoe_db
 
-[NNSVS](https://github.com/r9y9/nnsvs) recipe of Oniku Kurumi's singing voice database (56 songs).
+[NNSVS](https://github.com/r9y9/nnsvs) recipe of Oniku Kurumi Utagoe Database (56 songs).
 Almost all codes are derived from [kiritan_singing](https://github.com/r9y9/kiritan_singing).
+
+## Important Notice
+**The recipe of Oniku Kurumi Utagoe Database is merged into NNSVS repository since 04 Nov 2020.  Please use the official one.**
+
+This repository is maintained only for the experimental purpose.
 
 ## Requirements
 - nnsvs
